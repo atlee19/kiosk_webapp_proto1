@@ -4,11 +4,13 @@ from control import ActionButtons
 
 app = Flask(__name__)
 
+app.config['SECRET_KEY'] = '857c97a793ec5f9010971b2e0b4a68bf'
+
 
 @app.route('/panel')
 def LoadPanel():
-	action = ActionButtons()
-	return render_template("panel.html")
+	form = ActionButtons()
+	return render_template("panel.html", form=form)
 
 
 
