@@ -1,11 +1,13 @@
 from flask import Flask, render_template
+from control import ActionButtons
 
 
 app = Flask(__name__)
 
 
 @app.route('/panel')
-def Test():
+def LoadPanel():
+	action = ActionButtons()
 	return render_template("panel.html")
 
 
