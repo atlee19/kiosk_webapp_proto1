@@ -19,6 +19,7 @@ def LoadPanel():
 		if form.button00.data:
 			print('button00 pressed')
 			#con.hello()
+			return render_template('connect.html')
 
 		elif form.button01.data:
 			print('button01 pressed')
