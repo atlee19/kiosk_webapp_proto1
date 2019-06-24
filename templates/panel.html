@@ -13,7 +13,7 @@
 <div class="container">
   <h2>Kiosk Control-Panel</h2>
   <div class="panel panel-default">
-    <div class="panel-heading">Buttons that do stuff</div>
+    <div class="panel-heading">Event Controls</div>
 
         <div class="panel-body">
           <form method=post>
@@ -35,13 +35,29 @@
            <button type="button" class="btn btn-danger">CLEAR</button>
         </div>
 
+  </div>
+</div>
+<!--End of Button Panel-->
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Server Controls</div>
 
-    
-    
+        <div class="panel-body">
+          <form method=post>
+            {{ form.button00(class="btn btn-primary")}}
+          </form>
+        </div>
+        <div class="panel-body">
+          <form method=post>
+            {{ form.button01(class="btn btn-primary")}}
+          </form>
+        </div>
+      
    
 
   </div>
 </div>
+
 
 
 </body>
