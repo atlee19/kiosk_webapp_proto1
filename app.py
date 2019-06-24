@@ -14,7 +14,7 @@ def LoadPanel():
 	if form.is_submitted():
 		if form.event01.data:
 			print('event 1 triggered')
-			
+			success = execute_js('play.js', ' -i 0.0.0.0 -e ./events/1.evt')
 			#return render_template('connect.html')
 		elif form.event02.data:
 			print('event 2 triggered')
@@ -31,6 +31,9 @@ def LoadPanel():
 		elif form.activate.data:
 			print('Server activated...')
 			success = execute_js('serve.js')
+
+		elif form.deactivate.data:
+			print('Server deactivated...')
 		
 
 	return render_template("panel.html", form=form)
