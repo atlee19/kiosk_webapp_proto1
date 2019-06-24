@@ -13,21 +13,20 @@ def LoadPanel():
 	form = ActionButtons()
 	if form.is_submitted():
 		if form.event01.data:
-			print('event 1 triggered')
+			print('event 1 triggered') #we can do it here and then flash it to html
 			success = execute_js('play.js', ' -i 0.0.0.0 -e ./events/1.evt')
-			#return render_template('connect.html')
 		elif form.event02.data:
 			print('event 2 triggered')
-
+			success = execute_js('play.js', ' -i 0.0.0.0 -e ./events/2.evt')
 		elif form.event03.data:
 			print('event 3 triggered')
-
+			success = execute_js('play.js', ' -i 0.0.0.0 -e ./events/3.evt')
 		elif form.event04.data:
 			print('event 4 triggered')
-
+			success = execute_js('play.js', ' -i 0.0.0.0 -e ./events/4.evt')
 		elif form.event05.data:
 			print('event 5 triggered')
-
+			success = execute_js('play.js', ' -i 0.0.0.0 -e ./events/5.evt')
 		elif form.activate.data:
 			print('Server activated...')
 			success = execute_js('serve.js')
