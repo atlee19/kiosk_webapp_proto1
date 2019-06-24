@@ -12,13 +12,17 @@ app.config['SECRET_KEY'] = '857c97a793ec5f9010971b2e0b4a68bf'
 def LoadPanel():
 	form = ActionButtons()
 	if form.is_submitted():
-		if form.button00.data:
-			print('button00 pressed')
-			success = execute_js('serve.js')
+		if form.event01.data:
+			print('event 1 triggered')
+			
 			#return render_template('connect.html')
 
-		elif form.button01.data:
-			print('button01 pressed')
+		elif form.event02.data:
+			print('event 2 triggered')
+
+		elif form.activate.data:
+			print('Server activated...')
+			success = execute_js('serve.js')
 		
 
 	return render_template("panel.html", form=form)
