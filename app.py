@@ -1,6 +1,6 @@
 from flask import Flask, render_template, flash
 from control import ActionButtons
-
+from Naked.toolshed.shell import execute_js, muterun_js
 
 
 app = Flask(__name__)
@@ -14,7 +14,8 @@ def LoadPanel():
 	if form.is_submitted():
 		if form.button00.data:
 			print('button00 pressed')
-			return render_template('connect.html')
+			success = execute_js('serve.js') #this can work. BUT need the dependencies
+			#return render_template('connect.html')
 
 		elif form.button01.data:
 			print('button01 pressed')
