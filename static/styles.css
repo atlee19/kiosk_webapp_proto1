@@ -1,0 +1,115 @@
+#event01 {
+  border: 2px solid #008CBA;
+  border-radius: 8px; 
+  background-color: white;
+  color: #008CBA;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+#event01:hover {
+	background-color: #008CBA; 
+	color: white; 
+	
+
+}
+
+#event02 {
+  border: 2px solid #008CBA;
+  border-radius: 8px; 
+  background-color: white;
+  color: #008CBA;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+
+}
+
+#event02:hover {
+	background-color: #008CBA; 
+	color: white; 
+	
+
+}
+
+
+#event03 {
+  border: 2px solid #008CBA;
+  border-radius: 8px; 
+  background-color: white;
+  color: #008CBA;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+#event03:hover {
+	background-color: #008CBA; 
+	color: white; 
+
+}
+
+
+#event04 {
+  border: 2px solid #008CBA;
+  border-radius: 8px; 
+  background-color: white;
+  color: #008CBA;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+#event04:hover {
+	background-color: #008CBA; 
+	color: white; 
+
+}
+
+#event05 {
+  border: 2px solid #008CBA;
+  border-radius: 8px; 
+  background-color: white;
+  color: #008CBA;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+
+#event05:hover {
+	background-color: #008CBA; 
+	color: white; 
+
+}
+
+#activate {
+  border: 2px solid #32CD32;
+  border-radius: 8px; 
+  background-color: white;
+  color: #32CD32;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#activate:hover {
+	background-color: #32CD32; 
+	color: white; 
+
+}
+
+.panel{
+
+	width: 300px; 
+}
+
+
+
+
+
