@@ -14,7 +14,7 @@ def LoadPanel():
 	if form.is_submitted():
 		if form.button00.data:
 			print('button00 pressed')
-			success = execute_js('serve.js') #this can work. BUT need the dependencies
+			success = execute_js('serve.js')
 			#return render_template('connect.html')
 
 		elif form.button01.data:
