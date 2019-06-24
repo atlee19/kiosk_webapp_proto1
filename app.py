@@ -16,9 +16,17 @@ def LoadPanel():
 			print('event 1 triggered')
 			
 			#return render_template('connect.html')
-
 		elif form.event02.data:
 			print('event 2 triggered')
+
+		elif form.event03.data:
+			print('event 3 triggered')
+
+		elif form.event04.data:
+			print('event 4 triggered')
+
+		elif form.event05.data:
+			print('event 5 triggered')
 
 		elif form.activate.data:
 			print('Server activated...')
